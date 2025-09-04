@@ -1,125 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sanjay Pramanik Portfolio</title>
+    <title>Manoj Thakur Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-
-
 <style>
-
 /*======================================
 //--//-->   ABOUT
 ======================================*/
+.about-mf .box-shadow-full { padding-top: 4rem; padding-bottom: 4rem; }
+.about-mf .about-img { margin-bottom: 2rem; }
+.about-mf .about-img img { margin-left: 10px; }
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
+.skill-mf .progress { margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem; }
+.skill-mf .progress .progress-bar { height: .7rem; background-color: #ffbd39; }
 
 /* Animation styles */
 #typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
+  position: relative; font-size: 30px; font-weight: bold; color: #fff;
+  overflow: hidden; white-space: nowrap; animation: typing 3s steps(20, end) infinite;
 }
-
 #typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
+  content: ""; top: 0; left: 0; width: 0; height: 100%; background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes typing-cursor { from { width: 5px; } to { width: 0; } }
 
 /* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
+.zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
+.zoom-effect:hover { transform: scale(1.1); }
 </style>
-
-
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Sanjay Pramanik</a>
+	      <a class="navbar-brand" href="index.html">Manoj Thakur</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -135,8 +66,9 @@
 	      </div>
 	    </div>
 	  </nav>
+
 	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
+		  <div class="home-slider owl-carousel">
 	       <div class="slider-item ">
 	      	<div class="overlay"></div>
 	         <div class="container">
@@ -144,54 +76,39 @@
 	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
 	          	 <div class="overlay"></div>
 	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Sanjay Pramanik</span></h1>
+			            <h1 class="mb-4 mt-3">I'm <span>Manoj Thakur</span></h1>
 
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
 
 						<script>
-
-						// Initialize the typing animation
 						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
 						const typingTexts = [
-						'Automation & Scripting Advocate  ',
-						'AI Tools Enthusiast  ',
+						  'Senior Technical Writer  ',
+						  'Developer & Data Platform Docs  ',
+						  'Regulated Content Specialist  '
 						];
-
-						// Create a function to display the typing animation for a given text
 						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+						  for (let i = 0; i < text.length; i++) {
+						    setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 120);
+						  }
+						  setTimeout(() => {
+						    typingAnimationElement.textContent = '';
+						    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						  }, text.length * 120);
 						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
 						playTypingAnimation(typingTexts[0]);
-
 						</script>
 
-						<br>
-						<br>
+						<br><br>
 			            <h2>Senior Technical Writer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
 			            <p>
-                            <a href="https://www.linkedin.com/in/sanjay-pramanik-0883877b/" class="btn btn-primary py-3 px-4">LinkedIn</a>
-                            <a href="mailto:sp20149201@gmail.com" class="btn btn-white btn-outline-white py-3 px-4">Email Me</a>
+                          <a href="https://www.linkedin.com/in/manoj-thakur-801030213/" class="btn btn-primary py-3 px-4" target="_blank" rel="noopener">LinkedIn</a>
+                          <a href="mailto:manojthakur9893@gmail.com" class="btn btn-white btn-outline-white py-3 px-4">Email Me</a>
+                          <a href="Manoj_Thakur_Resume.pdf" class="btn btn-white btn-outline-white py-3 px-4" download>Download Resume</a>
                         </p>
 		            </div>
 		          </div>
@@ -201,26 +118,21 @@
 		</div>
     </section>
 
-
-
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Profile photo">
 									  </div>
 									</div>
-									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-									  </div>
+									  <div class="about-info"></div>
 									</div>
 								  </div>
 
@@ -240,67 +152,45 @@
 									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%"></div></div>
 									<span>Project Management</span> <span class="pull-right">Advanced</span>
 									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
-
-									<!-- Removed Projects Completed counter from About section -->
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-								
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 
 <p>
-  Hi, I’m Sanjay Pramanik—a Senior Technical Writer with 11 years of experience translating tech jargon into something humans can actually read. I write everything from user manuals to SDK guides, and talk to engineers (they're nice once you bribe them with coffee).
-  <br><br>
-  I automate the boring stuff, mentor confused new writers, and once made a script that saved 40 hours a month—my keyboard still hasn’t forgiven me.
-  <br><br>
-  Based in Bangalore, powered by Python, caffeine, and the occasional AI tool.
+  Hi, I’m <strong>Manoj Thakur</strong> — a Senior Technical Writer with 9+ years of experience across developer/data platforms and regulated content (medical devices, automotive, aerospace, semiconductors). I create clear, searchable docs—API/SDK guides, runbooks, service & troubleshooting manuals—using Git-based workflows, Markdown/DITA (Oxygen XML), and CI/CD. I partner with engineers, PMs, and SMEs to translate complex systems into simple, reliable instructions that scale.
 </p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-    <li class="d-flex"><span>Profile:</span> <span>Technical Writing, Documentation, Automation</span></li>
-    <li class="d-flex"><span>Domains:</span> <span>Semiconductor, Software, Automotive</span></li>
-    <li class="d-flex"><span>Education:</span> <span>Master of Science in Computer Science</span></li>
-    <li class="d-flex"><span>Certifications:</span> <span>Postman API Fundamentals, UX Foundations, Photoshop Automation, Prompt Engineering Application</span></li>
-    <li class="d-flex"><span>Tools:</span> <span>Oxygen XML, MadCap Flare, FrameMaker, Adobe CC, Power Automate, PowerShell, Python, Git, Jira, SharePoint</span></li>
-    <li class="d-flex"><span>Interest:</span> <span>Travel, Technology</span></li>
+
+<ul class="about-info mt-4 px-md-0 px-2">
+  <li class="d-flex"><span>Profile:</span> <span>Technical Writing, Developer Docs, Regulated Content</span></li>
+  <li class="d-flex"><span>Domains:</span> <span>Software/Data Platforms, Medical Devices, Automotive, Aerospace, Semiconductors</span></li>
+  <li class="d-flex"><span>Education:</span> <span>MS in Information Technology (Data Analytics)</span></li>
+  <li class="d-flex"><span>Tools:</span> <span>Oxygen XML (DITA), Markdown, GitHub/GitLab, Postman, OpenAPI/Swagger, Adobe Illustrator, Visio, Jira, Confluence, Veeva Vault</span></li>
+  <li class="d-flex"><span>Interests:</span> <span>Tech, Writing Systems, Fitness</span></li>
 </ul>
 							</div>
 						</div>
-
-
-						<!-- Remove this block from the About section -->
-						<!--
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-    <div class="text">
-        <p class="mb-4">
-            <span class="number" data-number="30">0</span> <span>+</span>
-            <span>&nbsp; Projects completed</span>
-        </p>
-        <!-- Removed LinkedIn button from About section -->
-    <!--    </div>
-</div>
-						-->
 					</div>
 				</div>
 			</div>
     </section>
 
-
-
-	
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Technical Writer with 11 years of experience in semiconductor, software, and automotive domains. Expert in documentation, automation, and cross-functional collaboration.</p>
-            <p><a href="https://forms.gle/Tbimsg9xEsFmVRMx9" class="btn btn-primary py-4 px-5">Request for resume</a></p>
+            <p>Senior Technical Writer focused on developer/data platforms and regulated content. API docs, SDK/CLI, SOPs, troubleshooting guides, and release notes.</p>
+            <p>
+              <a href="Manoj_Thakur_Resume.pdf" class="btn btn-primary py-4 px-5" download>Download Resume</a>
+            </p>
           </div>
         </div>
 
@@ -309,74 +199,57 @@
 			<div class="underline"></div>
 		</div>
 		<br>
-		
+
 		<div class="row">
             <div class="col-md-6">
                 <div class="resume-wrap ftco-animate">
-                    <span class="date">June 2022 – Present</span>
-                    <h2>Senior Technical Writer</h2>
-                    <span class="position">Microchip Technology Inc</span>
+                    <span class="date">Apr 2025 – Present</span>
+                    <h2>Technical Writer</h2>
+                    <span class="position">Indeed</span>
                     <p class="mt-4">
-                        <ul>
-                            <li>Led end-to-end documentation for semiconductor hardware and software products, including quick start guides, user manuals, SDK and CLI guides, FAQs, application notes, datasheets, and release notes.</li>
-<li>Created, revised, and peer-reviewed documentation to ensure compliance with established editing standards (MSTP, DDLC) and quality benchmarks.</li>
-<li>Collaborated with cross-functional stakeholders in design, engineering, product management, and marketing to align documentation with technical and business objectives.</li>
-<li>Managed project timelines and resource allocation, ensuring on-time delivery of all documentation deliverables.</li>
-<li>Mentored and coached technical writers by developing training materials, delivering presentations, and facilitating effective knowledge transfer sessions.</li>
-<li>Developed and maintained a SharePoint knowledge base with step-by-step guides, video tutorials, and FAQs to support team adoption of automation and workflow improvements.</li>
-                        </ul>
+                      <ul>
+                        <li>Own and publish external developer docs for Analyze, Orchestrate, Discover, Trino, and IQL.</li>
+                        <li>Author API reference and how-to content; document REST endpoints and data models.</li>
+                        <li>Work in Git MR workflows with CI/CD previews, linting, and link checks.</li>
+                        <li>Partner with Eng/PM/UX to turn specs & sprints into accurate docs and release notes.</li>
+                      </ul>
                     </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="resume-wrap ftco-animate">
-                    <span class="date">Nov 2017 – June 2022</span>
-                    <h2>Engineer</h2>
-                    <span class="position">L&T Technology Services</span>
+                    <span class="date">Dec 2024 – Apr 2025</span>
+                    <h2>Technical Writer</h2>
+                    <span class="position">Zoox</span>
                     <p class="mt-4">
-                        <ul>
-                            <li>Developed documentation for semiconductor-manufacturing automation products (wafer handling robots and contamination control solutions), including SOPs, user manuals, installation manuals, and SDK guides.</li>
-<li>Utilized Snagit to capture high-quality screenshots and enhance graphical content in technical documents.</li>
-<li>Created instructional and demonstration videos to clarify product features and usage for end users.</li>
-<li>Collaborated with subject matter experts, software engineers, and international colleagues to research and gather complex technical data.</li>
-<li>Delivered onsite documentation projects in Germany for Brooks Automation, enabling UI documentation for European market readiness.</li>
-<li>Participated in Project Management Team (PMT) meetings to align documentation deliverables with project milestones and KPIs.</li>
-                        </ul>
+                      <ul>
+                        <li>Authored service/repair/troubleshooting manuals and SOPs for autonomous systems.</li>
+                        <li>Produced diagnostic flowcharts, PM schedules, and checklists.</li>
+                      </ul>
                     </p>
                 </div>
             </div>
         </div>
+
         <br>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="resume-wrap ftco-animate">
-                    <span class="date">May 2017 – Nov 2017</span>
-                    <h2>Associate Consultant</h2>
-                    <span class="position">Capgemini</span>
+                    <span class="date">2014 – 2022</span>
+                    <h2>Senior Technical Writer — Client Engagements</h2>
+                    <span class="position">Cades Studec Technologies (projects with Siemens Healthineers, Intel, Kia, Airbus)</span>
                     <p class="mt-4">
-                        <ul>
-                            <li>Produced technical documentation for SaaS products, ensuring clarity and adherence to client requirements.</li>
-                            <li>Refined UX microcopy for SaaS products to improve clarity, accuracy, and user engagement.</li>
-                            <li>Collaborated with stakeholders to gather inputs and translate them into user-friendly content.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">June 2014 – April 2017</span>
-                    <h2>Technical Data Engineer</h2>
-                    <span class="position">Cades Studec Technologies India</span>
-                    <p class="mt-4">
-                        <ul>
-                            <li>Developed technical documents for software and automobile products, ensuring grammatical accuracy and consistency.</li>
-                            <li>Coordinated with SMEs and both onshore/offshore teams to address documentation queries.</li>
-                            <li>Supported onsite documentation projects in France, ensuring compliance with industry standards such as STE100.</li>
-                        </ul>
+                      <ul>
+                        <li>Siemens Healthineers: IFUs, service manuals, SOPs, troubleshooting guides to FDA/ISO 13485; DITA in Oxygen; Veeva; XLIFF & SDL Trados.</li>
+                        <li>Intel: service/installation/maintenance guides for semiconductor automation equipment.</li>
+                        <li>Kia Motors: service manuals, repair guides, diagnostics; STE principles.</li>
+                        <li>Airbus: AMM, IPC, SRP, TSM to ATA iSpec 2200, S1000D, ASD-STE100.</li>
+                      </ul>
                     </p>
                 </div>
             </div>
         </div>
+
         <br>
         <div class="row">
           <h1 class="big-4">Achievements</h1>
@@ -386,30 +259,13 @@
         <div class="row">
           <div class="col-md-12">
             <ul>
-              <li>
-                <strong>Streamlined Documentation Processes:</strong> Implemented automation and AI tools, saving 10+ hours per week and reducing delivery timelines by 25% at Microchip Technology Inc.
-              </li>
-              <li>
-                <strong>Optimized Content Management:</strong> Developed scripts for SDL Tridion Docs CCMS, cutting manual writing effort by 40% and improving turnaround time by 65% at Microchip Technology Inc.
-              </li>
-              <li>
-                <strong>Enhanced Content Reuse:</strong> Applied advanced reuse strategies for datasheets, reducing manual work by 25% at Microchip Technology Inc.
-              </li>
-              <li>
-                <strong>Automated Image Standardization:</strong> Created scripts for Adobe Illustrator and Visio to standardize image sizes, saving 40+ hours per month at Microchip Technology Inc.
-              </li>
-              <li>
-                <strong>Improved Graphic Workflows:</strong> Developed automation scripts for Adobe Photoshop, saving 30+ hours per month and received “Star of the Month” award at L&T Technology Services.
-              </li>
-              <li>
-                <strong>Reduced User Learning Curve:</strong> Documented UI workflows and suggested improvements, decreasing user onboarding time by 25% at L&T Technology Services.
-              </li>
-              <li>
-                <strong>Standardized Proofreading:</strong> Developed and implemented a proofreading checklist, reducing review time by 15% at Cades Studec Technologies India.
-              </li>
+              <li><strong>Re-architected docs IA:</strong> Standardized taxonomy/navigation & versioning for data platform docs; improved findability and reduced duplication.</li>
+              <li><strong>Automation wins:</strong> Scripts and checks to standardize images and catch link/style issues pre-merge; faster releases with fewer regressions.</li>
+              <li><strong>Compliance-first content:</strong> Delivered audit-ready SOPs and troubleshooting guides aligned to FDA/ISO and STE style.</li>
             </ul>
           </div>
         </div>
+
         <br>
         <div class="row">
             <h1 class="big-4">Education</h1>
@@ -419,12 +275,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="resume-wrap ftco-animate">
-                    <span class="date">2023</span>
-                    <h2>Master of Science in Computer Science</h2>
-                    <span class="position">Singhania University</span>
+                    <span class="date">—</span>
+                    <h2>MS in Information Technology (Data Analytics)</h2>
+                    <span class="position">—</span>
                 </div>
             </div>
         </div>
+
         <br>
         <div class="row">
             <h1 class="big-4">Certifications</h1>
@@ -434,16 +291,14 @@
         <div class="row">
             <div class="col-md-12">
                 <ul>
-                    <li>Postman API Fundamentals | Postman</li>
-                    <li>UX Foundations | LinkedIn</li>
-                    <li>Photoshop Automation | LinkedIn</li>
-                    <li>Prompt Engineering Application | Simplilearn</li>
+                    <li>Postman API Fundamentals</li>
+                    <li>UX Foundations</li>
+                    <li>Photoshop Automation</li>
+                    <li>Prompt Engineering Application</li>
                 </ul>
             </div>
     	</div>
     </section>
-
-   
 
     <section class="ftco-section" id="project-section">
       <div class="container">
@@ -451,97 +306,42 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Writing Samples</h1>
             <h2 class="mb-4">Writing Samples</h2>
-            <p>
-              Explore a selection of my professional writing samples, showcasing expertise across a range of technical documentation and content types.<br>
-    </p>
+            <p>Explore a selection of my professional writing samples across API/SDK docs, troubleshooting, runbooks, and release notes.</p>
           </div>
         </div>
-        <!-- Icon-based layout for writing samples/projects -->
-<div class="row d-flex justify-content-center">
-  <!-- User Guide -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/User-Guide-MaxView-Storage.pdf" class="icon-link" target="_blank">
-        <span class="icon-book" style="font-size: 48px; color: #007bff;"></span>
-        <h3 class="heading mt-3">User Guide</h3>
-      </a>
-      <p>Sample user guide demonstrating clear, step-by-step instructions for end users.</p>
-    </div>
-  </div>
-  <!-- SDK Guide -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/SDK-Guide-CoreVectorBlox.pdf" class="icon-link" target="_blank">
-        <span class="icon-code" style="font-size: 48px; color: #28a745;"></span>
-        <h3 class="heading mt-3">SDK Guide</h3>
-      </a>
-      <p>Comprehensive guide for developers to use software development kits efficiently.</p>
-    </div>
-  </div>
-  <!-- CLI Guide -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/CLI-Guide-ARCCONF.pdf" class="icon-link" target="_blank">
-        <span class="icon-terminal" style="font-size: 48px; color: #20c997;"></span>
-        <h3 class="heading mt-3">CLI Guide</h3>
-      </a>
-      <p>Step-by-step instructions for using command-line interface tools effectively.</p>
-    </div>
-  </div>
-  <!-- Datasheet -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/Datasheet-IGBT-Module.pdf" class="icon-link" target="_blank">
-        <span class="icon-clipboard" style="font-size: 48px; color: #fd7e14;"></span>
-        <h3 class="heading mt-3">Datasheet</h3>
-      </a>
-      <p>Detailed technical datasheet outlining specifications and features for engineers.</p>
-    </div>
-  </div>
-  <!-- Quick Start Guide -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/Quickstart-Card-MIXED-SIGNAL-Daughter-Card.pdf" class="icon-link" target="_blank">
-        <span class="icon-compass" style="font-size: 48px; color: #ffc107;"></span>
-        <h3 class="heading mt-3">Quick Start Guide</h3>
-      </a>
-      <p>Get started quickly with concise, visual instructions for new users.</p>
-    </div>
-  </div>
-</div>
-<br>
-<div class="row d-flex justify-content-center">
-  <!-- Application Note -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/Application-Note-PolarFire-FPGA.pdf" class="icon-link" target="_blank">
-        <span class="icon-file-text" style="font-size: 48px; color: #17a2b8;"></span>
-        <h3 class="heading mt-3">Application Note</h3>
-      </a>
-      <p>Technical note explaining use cases, best practices, and implementation tips.</p>
-    </div>
-  </div>
-  <!-- Release Note -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/Release-Note-SmartHBA-Software-Firmware.pdf" class="icon-link" target="_blank">
-        <span class="icon-flask" style="font-size: 48px; color: #e83e8c;"></span>
-        <h3 class="heading mt-3">Release Notes</h3>
-      </a>
-      <p>Summary of new features, bug fixes, and improvements in product releases.</p>
-    </div>
-  </div>
-  <!-- FAQs -->
-  <div class="col-md-4 d-flex ftco-animate justify-content-center">
-    <div class="blog-entry text-center">
-      <a href="https://github.com/sanjay9066/Writing-Samples/blob/24a0fa8b1e162ee200d93535e45a79185d492756/FAQ-Synopsy-integration-SoC-Design-Suite-FPGA.pdf" class="icon-link" target="_blank">
-        <span class="icon-question-circle" style="font-size: 48px; color: #6f42c1;"></span>
-        <h3 class="heading mt-3">FAQs</h3>
-      </a>
-      <p>Frequently asked questions to help users troubleshoot and understand the product.</p>
-    </div>
-  </div>
-</div>
+
+        <!-- Replace the href values below with your own links (GitHub, PDFs, or public docs) -->
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 d-flex ftco-animate justify-content-center">
+            <div class="blog-entry text-center">
+              <a href="YOUR_API_GUIDE_LINK" class="icon-link" target="_blank" rel="noopener">
+                <span class="icon-book" style="font-size: 48px;"></span>
+                <h3 class="heading mt-3">API Guide</h3>
+              </a>
+              <p>Sample API guide—reference + how-to coverage for developers.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate justify-content-center">
+            <div class="blog-entry text-center">
+              <a href="YOUR_TROUBLESHOOTING_GUIDE_LINK" class="icon-link" target="_blank" rel="noopener">
+                <span class="icon-terminal" style="font-size: 48px;"></span>
+                <h3 class="heading mt-3">Troubleshooting Guide</h3>
+              </a>
+              <p>Diagnostics and flow-based steps to resolve issues quickly.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate justify-content-center">
+            <div class="blog-entry text-center">
+              <a href="YOUR_RELEASE_NOTES_LINK" class="icon-link" target="_blank" rel="noopener">
+                <span class="icon-clipboard" style="font-size: 48px;"></span>
+                <h3 class="heading mt-3">Release Notes</h3>
+              </a>
+              <p>Concise summaries of new features, fixes, and improvements.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -559,7 +359,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="1358">0</strong>
+                <strong class="number" data-number="500">0</strong>
                 <span>Documents</span>
               </div>
             </div>
@@ -582,23 +382,20 @@
           </div>
         </div>
       </div>
-	
+
 	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
-						<h2>Interested in automating <span> writing projects</span>? </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden stories </h4>
-						<br>
-            <p><a href="https://www.linkedin.com/in/sanjay-pramanik-0883877b/" class="btn btn-primary py-3 px-5">Connect on LinkedIn</a></p>
+						<h2>Interested in <span> great documentation</span>?</h2>
+						<div class="heading">
+              <h4>I help teams ship clear, reliable docs—fast.</h4>
+              <br>
+              <p><a href="https://www.linkedin.com/in/manoj-thakur-801030213/" class="btn btn-primary py-3 px-5" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
 		</div>
 	</section>
-
-
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
@@ -616,8 +413,8 @@
               <div class="icon d-flex align-items-center justify-content-center">
                 <span class="icon-map-signs"></span>
               </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Bangalore, India</p>
+              <h3 class="mb-4">Location</h3>
+              <p>Saint Charles, Missouri, USA</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
@@ -625,8 +422,8 @@
               <div class="icon d-flex align-items-center justify-content-center">
                 <span class="icon-phone2"></span>
               </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p><a>Reach me on LinkdeIn</a></p>
+              <h3 class="mb-4">Contact</h3>
+              <p><a href="mailto:manojthakur9893@gmail.com">Email me</a> or connect on LinkedIn</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
@@ -635,24 +432,17 @@
                 <span class="icon-paper-plane"></span>
               </div>
               <h3 class="mb-4">Email Address</h3>
-              <p><a href="mailto:sp20149201@gmail.com">sp20149201@gmail.com</a></p>
+              <p><a href="mailto:manojthakur9893@gmail.com">manojthakur9893@gmail.com</a></p>
             </div>
           </div>
         </div>
+	   </div>
+    </section>
 
-	
-        
-		   </div>
-   </div>
- </section>
-
-
- 
-	
     <footer class="ftco-footer ftco-section">
         <div class="container">
           <div class="row">
-            <!-- Footer content can go here if needed -->
+            <!-- Footer content -->
           </div>
         </div>
     </footer>
