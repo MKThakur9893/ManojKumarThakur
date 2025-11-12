@@ -35,7 +35,7 @@
   overflow: hidden; white-space: nowrap; animation: typing 3s steps(20, end) infinite;
 }
 #typing-animation:before {
-  content: ""; top: 0; left: 0; width: 0; height: 100%; background-color: #ccc;
+  content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%; background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
 @keyframes typing { from { width: 0; } to { width: 100%; } }
@@ -82,26 +82,26 @@
 			            <h1 class="mb-4 mt-3">I'm <span>Manoj Thakur</span></h1>
 
 						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+						<span id="typing-animation" aria-live="polite"></span>
 
 						<script>
 						const typingAnimationElement = document.getElementById('typing-animation');
 						const typingTexts = [
-  						  'API & SDK Documentation Expert  ',
-    					  'Data Platforms Storyteller  ',
-    					  'Simplifying Developer Experience  ',
-                          'Docs that Scale with Code  ',
-                          'User-Friendly Documentation  ',
-  						  'Clarity in Complex Systems  '
+  						  'API & SDK Documentation',
+    					  'Reference Implementations',
+    					  'Executable Code Samples',
+                          'Docs-as-Code & CI/CD',
+                          'Developer Onboarding',
+  						  'AI-Assisted Documentation'
 						];
 						function playTypingAnimation(text) {
 						  for (let i = 0; i < text.length; i++) {
-						    setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 120);
+						    setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 90);
 						  }
 						  setTimeout(() => {
 						    typingAnimationElement.textContent = '';
 						    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						  }, text.length * 120);
+						  }, text.length * 90 + 600);
 						}
 						playTypingAnimation(typingTexts[0]);
 						</script>
@@ -141,20 +141,15 @@
 
 								<div class="skill-mf">
 									<p class="title-s">Skills & Core Competencies</p>
-									<span>Documentation</span> <span class="pull-right">Expert</span>
-									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 95%"></div></div>
-									<span>Writing Tools</span> <span class="pull-right">Expert</span>
-									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%"></div></div>
-									<span>Illustration & Video Tools</span> <span class="pull-right">Advanced</span>
-									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
-									<span>Markup Languages</span> <span class="pull-right">Advanced</span>
-									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
-									<span>Automation & Scripting</span> <span class="pull-right">Advanced</span>
-									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
-									<span>AI Tools</span> <span class="pull-right">Advanced</span>
-									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%"></div></div>
-									<span>Project Management</span> <span class="pull-right">Advanced</span>
-									<div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
+
+                  <!-- Replace bars with categories from updated resume -->
+									<p><strong>Documentation:</strong> API/SDK docs, Developer Docs, Reference implementations, Code samples, Developer onboarding, UX Writing, How-to Guides, FAQ Guides</p>
+									<p><strong>Programming & Tools:</strong> Python, C++, Java, SQL, Bash, GitHub Actions, GitLab CI/CD, Docker, Kubernetes, Oxygen XML Editor, MadCap Flare, Adobe FrameMaker</p>
+									<p><strong>Authoring & Workflow:</strong> Markdown, Docs-as-Code, VS Code, Docusaurus, YAML/JSON, OpenAPI, Postman, Swagger</p>
+									<p><strong>Automation & Quality:</strong> CI validations, Linting, Build scripts, Doc testing, AI-assisted content generation</p>
+									<p><strong>Collaboration & Systems:</strong> GitHub, GitLab, Confluence, Jira, Figma, Notion, REST APIs, Data Pipelines</p>
+									<p><strong>AI & Productivity:</strong> GitHub Copilot, ChatGPT, Microsoft Copilot, Code interpreter for validation & content QA</p>
+									<p><strong>Operating Systems:</strong> Windows, Ubuntu, iOS</p>
 								</div>
 							</div>
 						</div>
@@ -167,15 +162,18 @@
 								<h2 class="mb-4">About Me</h2>
 
 <p>
-  Hi, I’m <strong>Manoj Thakur</strong> — a Senior Technical Writer with 10+ years of experience across developer/data platforms and regulated content (medical devices, automotive, aerospace, semiconductors). I create clear, searchable docs—API/SDK guides, runbooks, service & troubleshooting manuals—using Git-based workflows, Markdown/DITA (Oxygen XML), Enterprise Dataflow Mapping and CI/CD. I partner with engineers, PMs, and SMEs to translate complex systems into simple, reliable instructions that scale.
+  Hi, I’m <strong>Manoj Thakur</strong> — a Senior Technical Writer specialized in developer platforms. I create clear, reliable
+  <em>API &amp; SDK documentation, executable code samples, reference implementations, and CI/CD-backed docs</em> that reduce time-to-first-success.
+  I work docs-as-code (Git/GitHub/GitLab, Markdown, OpenAPI), validate APIs with real Python/C++/Java examples, and leverage AI tools (Copilot, ChatGPT)
+  to scale content quality across engineering teams.
 </p>
 
 <ul class="about-info mt-4 px-md-0 px-2">
-  <li class="d-flex"><span>Profile:</span> <span>Technical Writing, Developer Docs, Regulated Content</span></li>
-  <li class="d-flex"><span>Domains:</span> <span>Software/Data Platforms, Medical Devices, Automotive, Aerospace, Semiconductors</span></li>
+  <li class="d-flex"><span>Profile:</span> <span>Developer Documentation • API/SDKs • Docs-as-Code • CI/CD Automation</span></li>
+  <li class="d-flex"><span>Domains:</span> <span>Cloud/Data Platforms • Simulation/Realtime Systems • Developer Experience</span></li>
   <li class="d-flex"><span>Education:</span> <span>MS in Information Technology (Data Analytics)</span></li>
-  <li class="d-flex"><span>Tools:</span> <span>Oxygen XML (DITA), Markdown, GitHub/GitLab, Postman, OpenAPI/Swagger, Adobe Illustrator, Visio, Jira, Confluence, Veeva Vault</span></li>
-  <li class="d-flex"><span>Interests:</span> <span>Technology, Cooking, Hiking, Watching Anime</span></li>
+  <li class="d-flex"><span>Toolchain:</span> <span>OpenAPI/Swagger, Postman, Docusaurus, VS Code, GitHub/GitLab, Confluence, Jira</span></li>
+  <li class="d-flex"><span>Interests:</span> <span>Technology, Cooking, Hiking, Anime</span></li>
 </ul>
 							</div>
 						</div>
@@ -190,7 +188,7 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Senior Technical Writer focused on developer/data platforms and regulated content. API docs, SDK/CLI, SOPs, dataflow mapping, troubleshooting guides, and release notes.</p>
+            <p>Senior Technical Writer focused on developer platforms: API/SDK docs, executable samples, CI/CD automation, and developer onboarding.</p>
             <p>
               <a href="Manoj-Thakur-Resume.pdf" class="btn btn-primary py-4 px-5" download>Download Resume</a>
             </p>
@@ -206,33 +204,37 @@
 		<div class="row">
             <div class="col-md-6">
                 <div class="resume-wrap ftco-animate">
-                    <span class="date">Apr 2025 – Present</span>
-                    <h2>Technical Writer</h2>
-                    <span class="position">Indeed</span>
+                    <span class="date">Apr 2025 – Oct 2025</span>
+                    <h2>Senior Technical Writer</h2>
+                    <span class="position">Indeed Developer Platform (Remote — Austin, TX)</span>
                     <p class="mt-4">
                       <ul>
-                        <li>Own and publish external developer docs for Analyze, Orchestrate, Discover, Trino, and IQL.</li>
-                        <li>Author API reference and how-to content; document REST endpoints and data models.</li>
-                        <li>Work in Git MR workflows with CI/CD previews, linting, and link checks.</li>
-                        <li>Partner with Eng/PM/UX to turn specs & sprints into accurate docs and release notes.</li>
-                        <li>Maintain a structured, searchable internal wiki/knowledge base.</li>
-                        <li>Create architecture diagrams, workflow illustrations, and UI walkthroughs (Visio/Illustrator).</li>
-                        <li>Document data pipelines/ETL, internal SDKs/CLIs, and operational runbooks.</li>						  
+                        <li>Authored and maintained developer documentation for Analyze, Orchestrate, Discover, Trino, and IQL APIs, combining executable <strong>Python/Java/SQL</strong> examples with OpenAPI schemas and workflow diagrams.</li>
+                        <li>Built <strong>Python-based validation</strong> scripts to test REST endpoints, OAuth 2.0 authentication, and data integration pipelines across microservices.</li>
+                        <li>Designed and maintained <strong>GitLab CI/CD</strong> pipelines to lint Markdown, validate code samples, and verify schema integrity against live API endpoints.</li>
+                        <li>Created <strong>starter templates</strong> and reusable integration patterns to accelerate developer onboarding, reducing setup time by 40%.</li>
+                        <li>Partnered with engineers to <strong>auto-generate API docs</strong> from OpenAPI 3.0 specs; implemented pre-commit hooks to catch errors pre-release.</li>
+                        <li>Leveraged <strong>GitHub Copilot, ChatGPT, and Microsoft Copilot</strong> to optimize code samples, automate doc generation, and detect API inconsistencies.</li>
+                        <li>Authored developer <strong>How-to</strong> and <strong>FAQ</strong> content to address recurring integration issues; created <strong>Figma/Visio</strong> architecture diagrams and data-flows.</li>
+                        <li>Built <strong>Power BI dashboards</strong> to measure adoption, broken links, and content health for continuous improvement.</li>
                       </ul>
                     </p>
                 </div>
             </div>
+
             <div class="col-md-6">
                 <div class="resume-wrap ftco-animate">
                     <span class="date">Dec 2024 – Apr 2025</span>
                     <h2>Technical Writer</h2>
-                    <span class="position">Zoox</span>
+                    <span class="position">Zoox Autonomous Systems Platform (Foster City, CA)</span>
                     <p class="mt-4">
                       <ul>
-                        <li>Authored service/repair/troubleshooting manuals and SOPs for autonomous systems.</li>
-                        <li>Produced diagnostic flowcharts, PM schedules, and checklists.</li>
-						<li>Drove version control and review cycles in GitHub and Confluence.</li>
-						<li>Created first-responder and emergency shutdown protocols.</li>
+                        <li>Produced developer documentation for <strong>simulation SDKs</strong> and diagnostic APIs, focusing on real-time data streaming and integration workflows.</li>
+                        <li>Authored <strong>Python and C++ reference modules</strong> demonstrating API usage, sensor data processing, and event-driven patterns.</li>
+                        <li>Maintained <strong>GitHub Actions</strong> for automated doc builds, regression testing, and validation of sample code against live APIs.</li>
+                        <li>Created developer onboarding <strong>templates</strong> and integration guides, reducing time-to-first-success.</li>
+                        <li>Implemented <strong>AI-driven doc linting & QA</strong> (Copilot, ChatGPT) to improve structure, tone, and accuracy; refined SDK packaging and CI integration with engineers.</li>
+                        <li>Published <strong>How-to/FAQ</strong> content to reduce support tickets by 25%.</li>
                       </ul>
                     </p>
                 </div>
@@ -243,15 +245,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="resume-wrap ftco-animate">
-                    <span class="date">2014 – 2022</span>
-                    <h2>Senior Technical Writer — Client Engagements</h2>
-                    <span class="position">Cades Studec Technologies (projects with Siemens Healthineers, Intel, Kia, Airbus)</span>
+                    <span class="date">Jun 2014 – Jul 2022</span>
+                    <h2>Senior Technical Writer — Developer Documentation Projects</h2>
+                    <span class="position">Cades Studec Technologies (Bengaluru, India)</span>
                     <p class="mt-4">
                       <ul>
-                        <li>Siemens Healthineers: IFUs, service manuals, SOPs, troubleshooting guides to FDA/ISO 13485; DITA in Oxygen; Veeva; XLIFF & SDL Trados.</li>
-                        <li>Intel: service/installation/maintenance guides for semiconductor automation equipment.</li>
-                        <li>Kia Motors: service manuals, repair guides, diagnostics; STE principles.</li>
-                        <li>Airbus: AMM, IPC, SRP, TSM to ATA iSpec 2200, S1000D, ASD-STE100.</li>
+                        <li><strong>Siemens Healthineers (2021–2022):</strong> Re-architected integration/service docs into <strong>API/SDK developer guides</strong> with executable Python/Java examples; built Python validation for REST APIs; managed docs-as-code in GitHub/Veeva with CI checks and multilingual publishing.</li>
+                        <li><strong>Intel (2019–2021):</strong> Authored developer content for automation SDKs (<strong>C++ libraries, Python wrappers, CLI</strong>); implemented <strong>GitLab CI/CD</strong> for doc builds and API schema validation; created <strong>reference applications</strong> demonstrating SDK integration.</li>
+                        <li><strong>Kia Motors (2017–2019):</strong> Created <strong>diagnostic API</strong> docs and integration guides (REST, CAN/LIN); developed Python/Bash scripts to simulate API traffic and benchmark data flows; aligned docs with software release cycles via Windchill/SharePoint.</li>
+                        <li><strong>Airbus (2014–2017):</strong> Authored developer documentation for internal maintenance SDKs and XML data-exchange APIs; automated publishing with <strong>Python + Arbortext</strong>; standardized API reference generation from code comments.</li>
                       </ul>
                     </p>
                 </div>
@@ -267,11 +269,9 @@
         <div class="row">
           <div class="col-md-12">
             <ul>
-              <li><strong>Re-architected docs IA:</strong>  Standardized taxonomy, navigation IA, and versioning; improved findability and reduced duplication at Indeed, lowering external support asks by 25%.</li>
+              <li><strong>Re-architected docs IA:</strong> Standardized taxonomy, navigation IA, and versioning; improved findability and reduced duplication, lowering external support asks by 25%.</li>
               <li><strong>Automation wins:</strong> Scripts and checks to standardize images and catch link/style issues pre-merge; faster releases with fewer regressions.</li>
-              <li><strong>Compliance-first content:</strong> Delivered audit-ready SOPs and troubleshooting guides aligned to FDA/ISO and STE style.</li>
-			  <li><strong>Standardized Proofreading:</strong> Developed and implemented a proofreading checklist, reducing review time by 15% at Cades Studec Technologies India.</li>
-			  <li><strong>Enhanced Content Reuse:</strong> Applied advanced reuse strategies for datasheets, reducing manual work by 25% at Kia Motors.</li>
+              <li><strong>Standardized proofreading:</strong> Implemented a checklist, reducing review time by 15%.</li>
             </ul>
           </div>
         </div>
@@ -287,7 +287,14 @@
                 <div class="resume-wrap ftco-animate">
                     <span class="date">May 2024</span>
                     <h2>MS in Information Technology (Data Analytics)</h2>
-                    <span class="position">California Lutheran University, Thousand Oaks/California</span>
+                    <span class="position">California Lutheran University, Thousand Oaks, CA</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">May 2014</span>
+                    <h2>Bachelor of Aviation Technology</h2>
+                    <span class="position">Singhania University, Rajasthan, India</span>
                 </div>
             </div>
         </div>
@@ -301,10 +308,10 @@
         <div class="row">
             <div class="col-md-12">
                 <ul>
-                    <li>XML Essential Training</li>
-                    <li>Career Essentials in Data Analysis</li>
-                    <li>Power BI Data Methods</li>
-                    <li>Tableau Essential Training</li>
+                    <li>XML Essential Training (LinkedIn Learning)</li>
+                    <li>Career Essentials in Data Analysis (Microsoft/LinkedIn)</li>
+                    <li>Power BI Data Methods (PMI/LinkedIn)</li>
+                    <li>Tableau Essential Training (NASBA/LinkedIn)</li>
                 </ul>
             </div>
     	</div>
@@ -316,118 +323,109 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Writing Samples</h1>
             <h2 class="mb-4">Writing Samples</h2>
-            <p>Explore a selection of my professional writing samples, showcasing expertise across a range of technical documentation and content types.</p>
+            <p>Explore a selection of my professional writing samples, showcasing API/SDK docs, quickstarts, troubleshooting, and SOPs.</p>
           </div>
         </div>
 
 <div class="row d-flex justify-content-center">
-  <!-- API Documentation 1 -->
+  <!-- (links unchanged; update files as desired) -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="API-doc-1.pdf" class="icon-link" target="_blank">
-        <span class="icon-code" style="font-size: 48px; color: #28a745;"></span>
+      <a href="API-doc-1.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-code" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">API Documentation (1)</h3>
       </a>
       <p>Comprehensive API reference with authentication, endpoints, and usage examples.</p>
     </div>
   </div>
 
-  <!-- API Documentation 2 -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="API-doc-2.pdf" class="icon-link" target="_blank">
-        <span class="icon-code" style="font-size: 48px; color: #007bff;"></span>
+      <a href="API-doc-2.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-code" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">API Documentation (2)</h3>
       </a>
       <p>Technical guide for accessing APIs, token handling, and integration flows.</p>
     </div>
   </div>
 
-  <!-- FAQ Sample -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="FAQ-sample.pdf" class="icon-link" target="_blank">
-        <span class="icon-question-circle" style="font-size: 48px; color: #6f42c1;"></span>
+      <a href="FAQ-sample.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-question-circle" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">FAQ Guide</h3>
       </a>
-      <p>Frequently asked questions to help users troubleshoot Airflow usage and access issues.</p>
+      <p>Frequently asked questions to help users troubleshoot usage and access issues.</p>
     </div>
   </div>
 
-  <!-- Mission Readiness -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="Mission-Readiness.pdf" class="icon-link" target="_blank">
-        <span class="icon-shield" style="font-size: 48px; color: #dc3545;"></span>
+      <a href="Mission-Readiness.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-shield" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">Mission Readiness SOP</h3>
       </a>
-      <p>Step-by-step procedure for vehicle sensor cleaning and inspection.</p>
+      <p>Step-by-step procedure for inspection and safety readiness.</p>
     </div>
   </div>
 
-  <!-- Payment Gateway API -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="Payment-gateway-API-doc.pdf" class="icon-link" target="_blank">
-        <span class="icon-credit-card" style="font-size: 48px; color: #20c997;"></span>
+      <a href="Payment-gateway-API-doc.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-credit-card" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">Payment Gateway API</h3>
       </a>
-      <p>API guide for booking rides, processing payments, and handling errors.</p>
+      <p>API guide for processing payments, booking, and error handling.</p>
     </div>
   </div>
 
-	<!-- Data Flow Process -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="Data-flow-process-sample.pdf" class="icon-link" target="_blank">
-        <span class="icon-credit-card" style="font-size: 48px; color: #20c997;"></span>
+      <a href="Data-flow-process-sample.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-graph" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">Data Flow Process Sample</h3>
       </a>
-      <p>Test Result Data Flow Between Diagnostic Platform and Oracle Database</p>
+      <p>Test result data flow between a diagnostic platform and a database.</p>
     </div>
   </div>
 
-  <!-- Quickstart Guide -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="Quickstart-Guide.pdf" class="icon-link" target="_blank">
-        <span class="icon-compass" style="font-size: 48px; color: #ffc107;"></span>
+      <a href="Quickstart-Guide.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-compass" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">Quickstart Guide</h3>
       </a>
-      <p>Introductory guide to running SQL queries with Trino for analytics.</p>
+      <p>Introductory guide to running queries for analytics.</p>
     </div>
   </div>
 
-  <!-- SDK Documentation -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="SDK-Documentation.pdf" class="icon-link" target="_blank">
-        <span class="icon-terminal" style="font-size: 48px; color: #17a2b8;"></span>
+      <a href="SDK-Documentation.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-terminal" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">SDK Documentation</h3>
       </a>
-      <p>Developer guide for Data Lineage SDK with integration, configuration, and FAQs.</p>
+      <p>Developer guide for an SDK with integration, configuration, and FAQs.</p>
     </div>
   </div>
 
-  <!-- SOP -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="SOP.pdf" class="icon-link" target="_blank">
-        <span class="icon-file-text" style="font-size: 48px; color: #fd7e14;"></span>
+      <a href="SOP.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-file-text" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">Standard Operating Procedure</h3>
       </a>
       <p>Formal procedure outlining replacement and safety processes.</p>
     </div>
   </div>
 
-  <!-- Troubleshooting -->
   <div class="col-md-4 d-flex ftco-animate justify-content-center">
     <div class="blog-entry text-center">
-      <a href="Troubleshooting_Sample.pdf" class="icon-link" target="_blank">
-        <span class="icon-wrench" style="font-size: 48px; color: #e83e8c;"></span>
+      <a href="Troubleshooting_Sample.pdf" class="icon-link" target="_blank" rel="noopener">
+        <span class="icon-wrench" style="font-size: 48px;"></span>
         <h3 class="heading mt-3">Troubleshooting Guide</h3>
       </a>
-      <p>Diagnostic procedure for resolving DCU hardware faults in vehicles.</p>
+      <p>Diagnostic procedure for resolving hardware faults.</p>
     </div>
   </div>
 </div>
@@ -496,7 +494,7 @@
         </div>
 
         <div class="row d-flex contact-info mb-5 justify-content-center text-center">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
+          <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="align-self-stretch box p-4 text-center">
               <div class="icon d-flex align-items-center justify-content-center">
                 <span class="icon-map-signs"></span>
@@ -505,39 +503,29 @@
               <p>Saint Charles, Missouri, USA</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
+
+          <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="align-self-stretch box p-4 text-center">
               <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-phone2"></span>
+                <span class="icon-paper-plane"></span>
               </div>
-				<h3 class="mb-4">Contact</h3>
-				<p>
-  				<a href="mailto:manojthakur9893@gmail.com">Email me</a> or 
-  				<a href="https://www.linkedin.com/in/manoj-thakur-801030213/" target="_blank" rel="noopener">connect on LinkedIn</a>
-				</p>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
-  				<div class="align-self-stretch box p-4 text-center">
-    			<div class="icon d-flex align-items-center justify-content-center">
-      			<span class="icon-paper-plane"></span>
-    			</div>
-    			<h3 class="mb-4">Email Address</h3>
-    			<p><a href="mailto:manojthakur9893@gmail.com">manojthakur9893@gmail.com</a></p>
-  				</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
- 				<div class="align-self-stretch box p-4 text-center">
- 				<div class="icon d-flex align-items-center justify-content-center">
-      			<span class="icon-linkedin"></span>
-    			</div>
-    			<h3 class="mb-4">LinkedIn</h3>
-    			<p>
-      			<a href="https://www.linkedin.com/in/manoj-thakur-801030213/" target="_blank" rel="noopener">
-        			linkedin.com/in/manoj-thakur-801030213
-      			</a>
-    			</p>
-  				</div>
-				</div>
-    			</section>
+              <h3 class="mb-4">Email</h3>
+              <p><a href="mailto:manojthakur9893@gmail.com">manojthakur9893@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate justify-content-center">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-linkedin"></span>
+              </div>
+              <h3 class="mb-4">LinkedIn</h3>
+              <p><a href="https://www.linkedin.com/in/manoj-thakur-801030213/" target="_blank" rel="noopener">linkedin.com/in/manoj-thakur-801030213</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="ftco-footer ftco-section">
         <div class="container">
@@ -548,8 +536,8 @@
     </footer>
 
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
+    <div id="ftco-loader" class="show fullscreen" aria-hidden="true">
+      <svg class="circular" width="48px" height="48px" role="img" aria-label="Loading">
         <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
         <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
       </svg>
