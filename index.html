@@ -2,279 +2,373 @@
 <html lang="en">
   <head>
     <title>Manoj Thakur Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<style>
-/*======================================
-//--//-->   ABOUT
-======================================*/
-.about-mf .box-shadow-full { padding-top: 4rem; padding-bottom: 4rem; }
-.about-mf .about-img { margin-bottom: 2rem; }
-.about-mf .about-img img { margin-left: 10px; }
+    <style>
+      /*======================================
+      //--//-->   ABOUT
+      ======================================*/
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
 
-.skill-mf .progress { margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem; }
-.skill-mf .progress .progress-bar { height: .7rem; background-color: #ffbd39; }
+      .skill-mf .progress {
+        margin: 0.5rem 0 1.2rem 0;
+        border-radius: 0;
+        height: 0.7rem;
+      }
+      .skill-mf .progress .progress-bar {
+        height: 0.7rem;
+        background-color: #ffbd39;
+      }
 
-/* Animation styles */
-#typing-animation {
-  position: relative; font-size: 30px; font-weight: bold; color: #fff;
-  overflow: hidden; white-space: nowrap; animation: typing 3s steps(20, end) infinite;
-}
-#typing-animation:before {
-  content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%; background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-@keyframes typing { from { width: 0; } to { width: 100%; } }
-@keyframes typing-cursor { from { width: 5px; } to { width: 0; } }
+      /* Animation styles */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+      #typing-animation:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+        to {
+          width: 0;
+        }
+      }
 
-/* project image zoom effect */
-.zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
-.zoom-effect:hover { transform: scale(1.1); }
-</style>
+      /* project image zoom effect */
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Manoj Thakur</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Manoj Thakur</a>
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Writing Samples</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Writing Samples</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	  <section id="home-section" class="hero">
-		  <div class="home-slider owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Manoj Thakur</span></h1>
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image: url(images/bg_1.png)">
+                <div class="overlay"></div>
+              </div>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation" aria-live="polite"></span>
+              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Manoj Thakur</span></h1>
 
-						<script>
-						const typingAnimationElement = document.getElementById('typing-animation');
-						const typingTexts = [
-  						  'API & SDK Documentation',
-    					  'Reference Implementations',
-    					  'Executable Code Samples',
-                          'Docs-as-Code & CI/CD',
-                          'Developer Onboarding',
-  						  'AI-Assisted Documentation'
-						];
+                  <!-- Element to contain animated typing -->
+                  <span id="typing-animation" aria-live="polite"></span>
 
-						function playTypingAnimation(text) {
-						  for (let i = 0; i < text.length; i++) {
-						    setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 90);
-						  }
-						  setTimeout(() => {
-						    typingAnimationElement.textContent = '';
-						    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						  }, text.length * 90 + 600);
-						}
-						playTypingAnimation(typingTexts[0]);
-						</script>
+                  <script>
+                    const typingAnimationElement = document.getElementById("typing-animation");
+                    const typingTexts = [
+                      "API & SDK Documentation",
+                      "Reference Implementations",
+                      "Executable Code Samples",
+                      "Docs-as-Code & CI/CD",
+                      "Developer Onboarding",
+                      "AI-Assisted Documentation",
+                    ];
 
-						<br><br>
-			            <h2>Technical Writer (Developer Platforms)</h2>
-			            <p class="mb-2">
-                          9+ years crafting developer-facing documentation, executable samples, and scalable docs systems across cloud, data, and simulation platforms.
-                        </p>
-			            <p>
-                          <a href="https://www.linkedin.com/in/manoj-thakur-801030213/" class="btn btn-primary py-3 px-4" target="_blank" rel="noopener">LinkedIn</a>
-                          <a href="mailto:manojthakur9893@gmail.com" class="btn btn-white btn-outline-white py-3 px-4">Email Me</a>
-                          <a href="Manoj-Thakur-Resume.pdf" class="btn btn-primary py-3 px-4" download>Download Resume</a>
-                        </p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+                    function playTypingAnimation(text) {
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 90);
+                      }
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = "";
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 90 + 600);
+                    }
+                    playTypingAnimation(typingTexts[0]);
+                  </script>
+
+                  <br /><br />
+                  <h2>Senior Technical Writer (Developer Platforms)</h2>
+                  <p class="mb-2">
+                    Senior Technical Writer with 10+ years of experience creating developer-focused documentation in software development environments.
+                    Specialized in docs-as-code workflows, API documentation, SDK documentation, and developer platforms.
+                  </p>
+
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/manoj-thakur-801030213/"
+                      class="btn btn-primary py-3 px-4"
+                      target="_blank"
+                      rel="noopener"
+                      >LinkedIn</a
+                    >
+                    <a href="mailto:manojthakur9893@gmail.com" class="btn btn-white btn-outline-white py-3 px-4">Email Me</a>
+                    <a href="Manoj-Thakur-Resume.pdf" class="btn btn-primary py-3 px-4" download>Download Resume</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about_me.jpg" class="img-fluid rounded b-shadow-a" alt="Profile photo">
-									  </div>
-									</div>
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info"></div>
-									</div>
-								  </div>
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="images/about_me.jpg" class="img-fluid rounded b-shadow-a" alt="Profile photo" />
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info"></div>
+                    </div>
+                  </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills & Core Competencies</p>
+                  <!-- UPDATED SKILLS (resume-aligned) -->
+                  <div class="skill-mf">
+                    <p class="title-s">Core Skills</p>
 
-									<p><strong>Documentation:</strong> API/SDK docs, Developer Docs, Reference implementations, Code samples, Developer onboarding, UX Writing, How-to Guides, FAQ Guides</p>
-									<p><strong>Programming & Tools:</strong> Python, Java, SQL, Bash, GitHub Actions, GitLab CI/CD, Docker, Oxygen XML Editor, MadCap Flare, Adobe FrameMaker</p>
-									<p><strong>Authoring & Workflow:</strong> Markdown, Docs-as-Code, VS Code, Docusaurus, YAML/JSON, OpenAPI, Postman, Swagger</p>
-									<p><strong>Automation & Quality:</strong> CI validations, Build scripts, Doc testing, AI-assisted content generation</p>
-									<p><strong>Collaboration & Systems:</strong> GitHub, GitLab, Confluence, Jira, Figma, Notion, REST APIs, Data Pipelines</p>
-									<p><strong>AI & Productivity:</strong> GitHub Copilot, ChatGPT, Microsoft Copilot, Code interpreter for validation and content QA</p>
-									<p><strong>Operating Systems:</strong> Windows, Ubuntu, iOS</p>
-								</div>
-							</div>
-						</div>
-					</div>
+                    <p>
+                      <strong>Documentation:</strong> API Documentation, SDK Documentation, Developer Guides, User Guides, Release Notes,
+                      Troubleshooting Guides, FAQs, Integration Documentation, Developer Onboarding, Technical Specifications
+                    </p>
 
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
+                    <p>
+                      <strong>Docs-as-Code & Authoring:</strong> Markdown, Git, Docs-as-Code Workflows, Static Site Generators (Docusaurus,
+                      MkDocs, Sphinx, Jekyll), VS Code, OpenAPI, Swagger
+                    </p>
 
-                                <p>
-                                  Hi, I’m <strong>Manoj Thakur</strong> — an innovative, detail-driven technical writer with <strong>9+ years</strong> of experience
-                                  creating developer-facing documentation, executable sample code, and scalable documentation systems across cloud, data, and simulation platforms.
-                                  I bridge engineering complexity and developer clarity by delivering <em>reference implementations, API/SDK guides, CI/CD-backed docs, and onboarding templates</em>
-                                  that reduce time-to-first-success.
-                                </p>
-                                <p>
-                                  I validate APIs using real code (Python/Java/SQL/Bash), build docs-as-code workflows (GitHub/GitLab, Markdown, OpenAPI),
-                                  and leverage AI-assisted tools (GitHub Copilot, ChatGPT, Microsoft Copilot) to scale quality across distributed teams.
-                                </p>
+                    <p>
+                      <strong>Authoring & Workflow:</strong> Markdown, Git, Docs-as-Code Workflows, Static Site Generators, VS Code, YAML,
+                      JSON, OpenAPI, Swagger, Postman
+                    </p>
 
-                                <ul class="about-info mt-4 px-md-0 px-2">
-                                  <li class="d-flex"><span>Profile:</span> <span>Developer Documentation • API/SDKs • Docs-as-Code • CI/CD Automation</span></li>
-                                  <li class="d-flex"><span>Domains:</span> <span>Cloud/Data Platforms • Simulation Workflows • Developer Experience</span></li>
-                                  <li class="d-flex"><span>Education:</span> <span>MS in Information Technology (Data Analytics)</span></li>
-                                  <li class="d-flex"><span>Toolchain:</span> <span>OpenAPI/Swagger, Postman, Docusaurus, VS Code, GitHub/GitLab, Confluence, Jira</span></li>
-                                  <li class="d-flex"><span>Activities:</span> <span>Gardening, Cooking, Hiking, Love Anime, Travel</span></li>
-                                </ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                    <p><strong>Programming & Technical:</strong> Python, SQL, Java, REST APIs, JSON, YAML, Bash</p>
+
+                    <p>
+                      <strong>Development Processes:</strong> Agile/Scrum, SDLC, Sprint Planning, Daily Standups, Sprint Reviews,
+                      Retrospectives, Documentation in CI/CD Pipelines
+                    </p>
+
+                    <p>
+                      <strong>Tools:</strong> GitHub, GitLab, Jira, Confluence, Draw.io, Visio, Lucidchart, Postman, Oxygen XML Editor,
+                      MadCap Flare, 3DX Catia, Arbortext Editor
+                    </p>
+
+                    <p><strong>AI & Automation:</strong> GitHub Copilot, ChatGPT, AI-assisted documentation workflows, Documentation validation automation</p>
+
+                    <p><strong>Operating Systems:</strong> Windows, Linux (Ubuntu), macOS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+
+                  <!-- UPDATED ABOUT (resume-aligned) -->
+                  <p>
+                    Hi, I’m <strong>Manoj Kumar Thakur</strong> — a <strong>Senior Technical Writer</strong> with <strong>10+ years</strong> of experience
+                    creating developer-focused documentation in software development environments. I specialize in <em>docs-as-code workflows, API documentation,
+                    SDK documentation, and developer platforms</em>, partnering with engineers, product managers, and QA to ship documentation aligned with releases.
+                  </p>
+
+                  <p>
+                    I bring hands-on technical depth across <strong>Python</strong>, <strong>REST APIs</strong>, <strong>JSON</strong>, and <strong>YAML</strong>, and I’m experienced in
+                    designing information architecture, building scalable documentation pipelines, and automating documentation validation using CI/CD workflows
+                    and AI-assisted tools.
+                  </p>
+
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex"><span>Profile:</span> <span>Developer Documentation • API/SDKs • Docs-as-Code • CI/CD Automation</span></li>
+                    <li class="d-flex"><span>Domains:</span> <span>Cloud/Data Platforms • Simulation Workflows • Developer Experience</span></li>
+                    <li class="d-flex"><span>Education:</span> <span>MS in Information Technology (Data Analytics)</span></li>
+                    <li class="d-flex"><span>Toolchain:</span> <span>OpenAPI/Swagger, Postman, Docusaurus, VS Code, GitHub/GitLab, Confluence, Jira</span></li>
+                    <li class="d-flex"><span>Activities:</span> <span>Gardening, Cooking, Hiking, Love Anime, Travel</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
+            <h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Technical writer focused on developer platforms: API/SDK docs, executable samples, CI/CD workflows, and developer onboarding.</p>
+            <p>Senior Technical Writer focused on developer platforms: API/SDK docs, executable samples, CI/CD workflows, and developer onboarding.</p>
             <p>
               <a href="Manoj-Thakur-Resume.pdf" class="btn btn-primary py-4 px-5" download>Download Resume</a>
             </p>
           </div>
         </div>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-
-		<div class="row">
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">Jun 2025 – Present</span>
-                    <h2>Technical Writer</h2>
-                    <span class="position">Zoox Headquarters • Foster City, California</span>
-                    <p class="mt-4">
-                      <ul>
-                        <li>Produced developer documentation for simulation SDKs and diagnostic APIs, focusing on real-time data streaming and robotic simulation workflows.</li>
-                        <li>Created manufacturing work instructions, service manuals, and diagnostics documentation.</li>
-                        <li>Authored Python and C++ reference modules demonstrating API usage, sensor data processing, and event-driven architecture patterns.</li>
-                        <li>Created developer onboarding templates and integration guides, reducing time-to-first-success for new contributors.</li>
-                        <li>Used AI-driven tools to improve tone and accuracy of documentation.</li>
-                        <li>Collaborated with engineers to refine SDK packaging, release notes, and CI integration to align docs with code releases.</li>
-                        <li>Authored How-to and FAQ content for recurring developer queries, reducing Slack ticket volume by 25%.</li>
-                      </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">Nov 2024 – Jun 2025</span>
-                    <h2>Technical Writer</h2>
-                    <span class="position">Indeed • Austin, Texas (Remote)</span>
-                    <p class="mt-4">
-                      <ul>
-                        <li>Authored and maintained developer documentation for Analyze, Orchestrate, Discover, Trino, and IQL APIs with executable Python/Java/SQL examples, OpenAPI schemas, and workflow diagrams.</li>
-                        <li>Built Python validation scripts for REST endpoints, OAuth 2.0 authentication, and data integration pipelines across microservices.</li>
-                        <li>Maintained GitLab CI/CD pipelines to lint Markdown, run code validations, and verify schema integrity against live API endpoints.</li>
-                        <li>Developed starter templates and reusable integration patterns to accelerate onboarding, reducing setup time by 40%.</li>
-                        <li>Partnered with platform engineers to auto-generate API docs from OpenAPI 3.0 specs and integrate doc builds into deployment workflows.</li>
-                        <li>Used GitHub Copilot, ChatGPT, and Microsoft Copilot to enhance code quality, automate doc generation, and detect API inconsistencies.</li>
-                        <li>Created architecture diagrams and data-flow visuals using Figma and Visio to document dependencies and service communication paths.</li>
-                        <li>Built Power BI dashboards to measure adoption, broken link counts, and usage metrics for continuous improvement.</li>
-                      </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <br>
         <div class="row">
-            <div class="col-md-12">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">Jun 2014 – Jul 2022</span>
-                    <h2>Senior Technical Writer (Client engagements)</h2>
-                    <span class="position">Cades Studec Technologies • Bengaluru, India</span>
-                    <p class="mt-4">
-                      <ul>
-                        <li><strong>Siemens Healthineers (Jan 2021 – Jul 2022):</strong> Re-architected integration/service docs into API/SDK-based developer guides with executable Python/Java examples; built Python validation for REST APIs; managed docs-as-code in GitHub and Veeva Vault with CI checks and multi-language publishing.</li>
-                        <li><strong>Intel Corporation (Dec 2019 – Jan 2021):</strong> Documented semiconductor automation SDKs (C++ class libraries, Python wrappers, CLI utilities); implemented GitLab CI/CD for automated doc builds, schema validation, and API change detection; built reference applications with engineers.</li>
-                        <li><strong>Kia Motors (Oct 2017 – Dec 2019):</strong> Created diagnostic API documentation and integration guides for connected-vehicle systems (REST, CAN/LIN); developed Python/Bash scripts to simulate requests and benchmark data flow; aligned docs with release cycles via Windchill/SharePoint.</li>
-                        <li><strong>Airbus (Jun 2014 – Oct 2017):</strong> Developed developer documentation for internal maintenance SDKs and XML-based data-exchange APIs; automated publishing with Python + Arbortext scripting for schema validation and doc builds; standardized code-comment extraction into API references.</li>
-                      </ul>
-                    </p>
-                </div>
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br />
+
+        <div class="row">
+          <!-- ZOOX -->
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Jun 2025 – Present</span>
+              <h2>Technical Writer</h2>
+              <span class="position">Zoox Headquarters • Foster City, California</span>
+              <p class="mt-4">
+                <ul>
+                  <li>Produced comprehensive developer and technical documentation for simulation SDKs and diagnostic APIs supporting robotic and autonomous vehicle workflows.</li>
+                  <li>Authored documentation in Markdown using docs-as-code workflows and Git version control, enabling collaborative documentation development with engineering teams.</li>
+                  <li>Developed API documentation, Python reference implementations, and integration examples demonstrating real-time data streaming and sensor processing architectures.</li>
+                  <li>Created service manuals, troubleshooting guides, mission readiness documents, and manufacturing workflow process in XML editor for technicians.</li>
+                  <li>Collaborated closely with engineers, QA teams, and product stakeholders within an Agile development environment, aligning documentation updates with sprint releases and feature delivery.</li>
+                  <li>Created developer onboarding guides, troubleshooting documentation, and FAQs to improve developer productivity and reduce support requests.</li>
+                  <li>Authored How-to and FAQ content addressing recurring developer support queries, reducing Slack ticket volume by 25%.</li>
+                  <li>Produced architecture diagrams and workflow visualizations using Visio and Draw.io to illustrate system components, integration points, and data flows.</li>
+                  <li>Maintained documentation updates aligned with software release cycles and SDLC processes, ensuring documentation accuracy during feature changes and system updates.</li>
+                  <li>Leveraged AI-assisted tools such as GitHub Copilot and ChatGPT to improve documentation clarity, accelerate content generation, and validate technical explanations.</li>
+                </ul>
+              </p>
             </div>
+          </div>
+
+          <!-- INDEED -->
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Nov 2024 – Jun 2025</span>
+              <h2>Technical Writer</h2>
+              <span class="position">Indeed • Austin, Texas (Remote)</span>
+              <p class="mt-4">
+                <ul>
+                  <li>Authored and maintained developer documentation for Analyze, Orchestrate, Discover, Trino, and IQL APIs, combining Markdown documentation with executable Java and SQL examples.</li>
+                  <li>Collaborated with engineers and product managers in an Agile/Scrum development environment, ensuring documentation delivery aligned with sprint milestones and platform releases.</li>
+                  <li>Maintained documentation repositories using Git and GitLab, supporting branching, pull requests, and collaborative review workflows.</li>
+                  <li>Built Python-based validation scripts to test REST endpoints, OAuth authentication workflows, and microservice integration pipelines.</li>
+                  <li>Maintained GitLab CI/CD pipelines to lint Markdown, validate API schemas, and automatically test documentation code examples against live endpoints.</li>
+                  <li>Partnered with engineering teams to auto-generate API documentation from OpenAPI specifications and integrate documentation builds into deployment pipelines.</li>
+                  <li>Created architecture diagrams and data-flow visualizations using Figma and Visio to support developer understanding of system interactions.</li>
+                  <li>Developed reusable documentation templates and onboarding guides that reduced developer integration time by 40%.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
         </div>
 
-        <br>
+        <br />
+
+        <!-- CADES -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Jun 2014 – Jul 2022</span>
+              <h2>Senior Technical Writer (Client engagements)</h2>
+              <span class="position">Cades Studec Technologies • Bengaluru, India</span>
+              <p class="mt-4">
+                <ul>
+                  <li><strong>Intel Corporation (Oct 2018 – Jan 2022):</strong> Authored developer-focused documentation for semiconductor automation SDKs and integration guides; created API documentation, code samples, and how-to guides validated against production SDK releases; implemented docs-as-code workflows using GitLab and CI/CD pipelines to automate doc builds, schema validation, and API change detection; developed reference applications and sample integrations.</li>
+                  <li><strong>Airbus (Jun 2014 – Oct 2018):</strong> Authored and maintained aircraft maintenance documentation (AMM, SRM, troubleshooting procedures) in compliance with ATA iSpec 2200, FAA, EASA, and ISO standards; developed structured XML-based technical documentation using Arbortext Editor; mentored new authors; managed multiple projects to achieve 100% on-time delivery with 97% quality compliance.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
         <div class="row">
           <h1 class="big-4">Awards & Achievements</h1>
           <div class="underline"></div>
         </div>
-        <br>
+        <br />
         <div class="row">
           <div class="col-md-12">
             <ul>
@@ -286,45 +380,46 @@
           </div>
         </div>
 
-        <br>
+        <br />
         <div class="row">
-            <h1 class="big-4">Education</h1>
-            <div class="underline"></div>
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
         </div>
-        <br>
+        <br />
         <div class="row">
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">May 2024</span>
-                    <h2>Master of Information Technology (Data Analytics)</h2>
-                    <span class="position">California Lutheran University • Thousand Oaks, California • 3.69 GPA</span>
-                </div>
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">May 2024</span>
+              <h2>Master of Information Technology (Data Analytics)</h2>
+              <span class="position">California Lutheran University • Thousand Oaks, California • 3.69 GPA</span>
             </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">May 2014</span>
-                    <h2>Bachelor of Aviation Technology</h2>
-                    <span class="position">Singhania University • Rajasthan, India • 3.5 GPA</span>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">May 2014</span>
+              <h2>Bachelor of Aviation Technology</h2>
+              <span class="position">Singhania University • Rajasthan, India • 3.5 GPA</span>
             </div>
+          </div>
         </div>
 
-        <br>
+        <br />
         <div class="row">
-            <h1 class="big-4">Certifications</h1>
-            <div class="underline"></div>
+          <h1 class="big-4">Certifications</h1>
+          <div class="underline"></div>
         </div>
-        <br>
+        <br />
         <div class="row">
-            <div class="col-md-12">
-                <ul>
-                    <li>XML Essential Training (LinkedIn Learning)</li>
-                    <li>Career Essentials in Data Analysis (Microsoft/LinkedIn)</li>
-                    <li>Power BI Data Methods (PMI/LinkedIn)</li>
-                    <li>Tableau Essential Training (NASBA/LinkedIn)</li>
-                </ul>
-            </div>
-    	</div>
+          <div class="col-md-12">
+            <ul>
+              <li>XML Essential Training (LinkedIn Learning)</li>
+              <li>Career Essentials in Data Analysis (Microsoft/LinkedIn)</li>
+              <li>Power BI Data Methods (PMI/LinkedIn)</li>
+              <li>Tableau Essential Training (NASBA/LinkedIn)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="ftco-section" id="project-section">
@@ -338,11 +433,10 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-          <!-- (links unchanged; update files as desired) -->
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="API-doc-1.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-code" style="font-size: 48px;"></span>
+                <span class="icon-code" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">API Documentation (1)</h3>
               </a>
               <p>Comprehensive API reference with authentication, endpoints, and usage examples.</p>
@@ -352,7 +446,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="API-doc-2.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-code" style="font-size: 48px;"></span>
+                <span class="icon-code" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">API Documentation (2)</h3>
               </a>
               <p>Technical guide for accessing APIs, token handling, and integration flows.</p>
@@ -362,7 +456,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="FAQ-sample.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-question-circle" style="font-size: 48px;"></span>
+                <span class="icon-question-circle" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">FAQ Guide</h3>
               </a>
               <p>Frequently asked questions to help users troubleshoot usage and access issues.</p>
@@ -372,7 +466,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="Mission-Readiness.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-shield" style="font-size: 48px;"></span>
+                <span class="icon-shield" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">Mission Readiness SOP</h3>
               </a>
               <p>Step-by-step procedure for inspection and safety readiness.</p>
@@ -382,7 +476,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="Payment-gateway-API-doc.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-credit-card" style="font-size: 48px;"></span>
+                <span class="icon-credit-card" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">Payment Gateway API</h3>
               </a>
               <p>API guide for processing payments, booking, and error handling.</p>
@@ -392,7 +486,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="Data-flow-process-sample.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-graph" style="font-size: 48px;"></span>
+                <span class="icon-graph" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">Data Flow Process Sample</h3>
               </a>
               <p>Test result data flow between a diagnostic platform and a database.</p>
@@ -402,7 +496,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="Quickstart-Guide.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-compass" style="font-size: 48px;"></span>
+                <span class="icon-compass" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">Quickstart Guide</h3>
               </a>
               <p>Introductory guide to running queries for analytics.</p>
@@ -412,7 +506,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="SDK-Documentation.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-terminal" style="font-size: 48px;"></span>
+                <span class="icon-terminal" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">SDK Documentation</h3>
               </a>
               <p>Developer guide for an SDK with integration, configuration, and FAQs.</p>
@@ -422,7 +516,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="SOP.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-file-text" style="font-size: 48px;"></span>
+                <span class="icon-file-text" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">Standard Operating Procedure</h3>
               </a>
               <p>Formal procedure outlining replacement and safety processes.</p>
@@ -432,7 +526,7 @@
           <div class="col-md-4 d-flex ftco-animate justify-content-center">
             <div class="blog-entry text-center">
               <a href="Troubleshooting_Sample.pdf" class="icon-link" target="_blank" rel="noopener">
-                <span class="icon-wrench" style="font-size: 48px;"></span>
+                <span class="icon-wrench" style="font-size: 48px"></span>
                 <h3 class="heading mt-3">Troubleshooting Guide</h3>
               </a>
               <p>Diagnostic procedure for resolving hardware faults.</p>
@@ -442,17 +536,19 @@
       </div>
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
-		<div class="row d-md-flex align-items-center">
+        <div class="row d-md-flex align-items-center">
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="9">0</strong>
+                <!-- UPDATED: 10 years -->
+                <strong class="number" data-number="10">0</strong>
                 <span>Years Experience</span>
               </div>
             </div>
           </div>
+
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -461,6 +557,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -469,6 +566,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -480,23 +578,31 @@
         </div>
       </div>
 
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>Interested in <span>great documentation</span>?</h2>
-						<div class="heading">
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>Interested in <span>great documentation</span>?</h2>
+            <div class="heading">
               <h4>I help teams ship clear, reliable docs—fast.</h4>
-              <br>
-              <p><a href="https://www.linkedin.com/in/manoj-thakur-801030213/" class="btn btn-primary py-3 px-5" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
-						</div>
-					</div>
-				</div>
-		</div>
-	</section>
+              <br />
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/manoj-thakur-801030213/"
+                  class="btn btn-primary py-3 px-5"
+                  target="_blank"
+                  rel="noopener"
+                  >Connect on LinkedIn</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
@@ -511,7 +617,8 @@
                 <span class="icon-map-signs"></span>
               </div>
               <h3 class="mb-4">Location</h3>
-              <p>Saint Charles, Missouri, 63301</p>
+              <!-- UPDATED LOCATION -->
+              <p>Sunnyvale, CA 94086</p>
             </div>
           </div>
 
@@ -541,7 +648,11 @@
                 <span class="icon-linkedin"></span>
               </div>
               <h3 class="mb-4">LinkedIn</h3>
-              <p><a href="https://www.linkedin.com/in/manoj-thakur-801030213/" target="_blank" rel="noopener">linkedin.com/in/manoj-thakur-801030213</a></p>
+              <p>
+                <a href="https://www.linkedin.com/in/manoj-thakur-801030213/" target="_blank" rel="noopener"
+                  >linkedin.com/in/manoj-thakur-801030213</a
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -549,18 +660,18 @@
     </section>
 
     <footer class="ftco-footer ftco-section">
-        <div class="container">
-          <div class="row">
-            <!-- Footer content -->
-          </div>
+      <div class="container">
+        <div class="row">
+          <!-- Footer content -->
         </div>
+      </div>
     </footer>
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen" aria-hidden="true">
       <svg class="circular" width="48px" height="48px" role="img" aria-label="Loading">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
       </svg>
     </div>
 
