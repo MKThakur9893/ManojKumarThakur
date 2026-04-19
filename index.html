@@ -192,6 +192,28 @@
       </div>
     </section>
 
+    /* Hero image quality and sizing */
+.hero .one-third.img {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 600px;
+}
+
+/* Remove dark overlay on top of portrait if it makes image look dull */
+.hero .one-third.img .overlay {
+  background: transparent !important;
+}
+
+/* Clean About section layout after removing image */
+#about-section .img-about .overlay {
+  padding: 0;
+}
+
+#about-section .skill-mf {
+  margin-bottom: 30px;
+}
+
     <!-- ABOUT -->
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
       <div class="container">
